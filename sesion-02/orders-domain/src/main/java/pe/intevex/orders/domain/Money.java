@@ -110,6 +110,14 @@ public record Money(BigDecimal amount, String currency) implements Comparable<Mo
         return montoSumado;
     }
 
+    public static Money of(String amount, String currency) {
+        return new Money(new BigDecimal(amount), currency);
+    }
+
+    public static Money of(BigDecimal amount, String currency) {
+        return new Money(amount, currency);
+    }
+
     public static Money soles(String amount) {
         return new Money(new BigDecimal(amount), PEN);
     }

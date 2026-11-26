@@ -1,5 +1,6 @@
 package pe.intevex.orders.tarea2;
 
+import pe.intevex.orders.domain.ExchangeRate;
 import pe.intevex.orders.domain.Money;
 
 import java.math.BigDecimal;
@@ -12,7 +13,7 @@ public class TareaMoney {
         //pruebaSuma();
         //pruebaSplit();
         //pruebaSplitIGV();
-        pruebaCompareto();
+        //pruebaCompareto();
     }
 
     public static void pruebaSuma(){
